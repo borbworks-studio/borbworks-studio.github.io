@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borbworks Studio</title>
+<meta name="description" content="Borbworks Studio makes Chonky Borb Adventures, a free offline arcade game about a very round bird.">
+<link rel="stylesheet" href="theme.css">
+<script src="header.js" defer></script>
+<style>
+  .hero { display: block; width: 100%; height: auto; border: 4px solid var(--outline); border-radius: 24px; box-shadow: 0 6px 0 var(--outline); }
+  .game { display: flex; gap: 20px; align-items: center; margin-top: 28px; }
+  .game img { width: 112px; height: 112px; border-radius: 26px; border: 4px solid var(--outline); flex: none; }
+  .game h2 { margin-top: 0; }
+  .game p { margin: 0; }
+  .status { display: inline-block; margin-top: 12px !important; padding: 4px 14px; border-radius: 999px; background: var(--crumb); border: 3px solid var(--outline); font-family: "Fredoka", system-ui, sans-serif; font-weight: 600; }
+  .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 28px; }
+  .shots img { width: 100%; height: auto; border: 4px solid var(--outline); border-radius: 18px; }
+  @media (max-width: 600px) {
+    .game { flex-direction: column; align-items: flex-start; }
+    .shots { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div>
+      <div class="name">Borbworks Studio</div>
+      <div class="by">Small, cheerful games.</div>
+    </div>
+  </div>
+</header>
+<main>
+  <img class="hero" src="banner.png" alt="Chonky Borb Adventures: a round yellow bird flying through a gap between a tree trunk and a rock, chasing crumbs">
+  <section class="panel game">
+    <img src="chonky-borb-icon.png" alt="Chonky Borb Adventures app icon">
+    <div>
+      <h2>Chonky Borb Adventures</h2>
+      <p>Tap to flap. Swipe to squash. Help a very round bird fly through the Forest, the Honey Meadow and Eagle Peaks, one crumb at a time. Free, and it plays offline.</p>
+      <p class="status">Coming soon to Google Play</p>
+    </div>
+  </section>
+  <section class="shots" aria-label="Screenshots">
+    <img src="shot-1-smash.png" alt="Body-slamming a bee in the Honey Meadow" loading="lazy">
+    <img src="shot-2-peaks.png" alt="Flying through Eagle Peaks" loading="lazy">
+    <img src="shot-5-shop.png" alt="The Chonky Shop with skins and trails" loading="lazy">
+    <img src="shot-8-menu.png" alt="The main menu with the stage selector" loading="lazy">
+  </section>
+</main>
+<footer>
+  <p><a href="https://borbworks-studio.github.io/chonky-borb-privacy/">Privacy policy</a></p>
+  <p>Contact: borbworks.studio@gmail.com</p>
+</footer>
+</body>
+</html>
